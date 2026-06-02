@@ -18,8 +18,12 @@ export class WatermarkEngine {
 
         try {
             const [bg48, bg96] = await Promise.all([
-                loadImage('./assets/bg_48.png'),
-                loadImage('./assets/bg_96.png')
+
+
+loadImage('https://cdn.jsdelivr.net/gh/02hdalimransp-jpg/Public_Js@main/assets/bg_48.png'),
+loadImage('https://cdn.jsdelivr.net/gh/02hdalimransp-jpg/Public_Js@main/assets/bg_96.png')
+
+                
             ]);
             return new WatermarkEngine(bg48, bg96);
         } catch (e) {
